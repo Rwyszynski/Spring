@@ -1,10 +1,9 @@
 package com.crud.tasks.trello.client;
 
-
+import com.crud.tasks.trello.config.TrelloConfig;
 import com.crud.tasks.domain.CreatedTrelloCard;
 import com.crud.tasks.domain.TrelloBoardDto;
 import com.crud.tasks.domain.TrelloCardDto;
-import com.crud.tasks.trello.config.TrelloConfig;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -65,6 +64,4 @@ public class TrelloClient {
 
         return restTemplate.postForObject(url, null, CreatedTrelloCard.class);
     }
-
-
 }
