@@ -41,7 +41,7 @@ public final class Mail {
 
     }
 
-    private Mail(String mailTo, String subject, String message, String toCc) {
+    public Mail(String mailTo, String subject, String message, String toCc) {
         this.mailTo = mailTo;
         this.subject = subject;
         this.message = message;
